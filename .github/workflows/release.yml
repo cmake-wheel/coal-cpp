@@ -12,7 +12,7 @@ on:
 
 env:
   CMEEL_LOG_LEVEL: DEBUG
-  DEPS: numpy cmeel-boost~=1.89.0 cmeel-eigen cmeel-assimp cmeel-octomap cmeel-qhull eigenpy[build] jrl-cmakemodules
+  DEPS: cmeel-boost~=1.89.0 cmeel-eigen cmeel-assimp cmeel-octomap cmeel-qhull jrl-cmakemodules
   PROJECT: libcoal
 
 jobs:
@@ -22,7 +22,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-24.04", "ubuntu-24.04-arm", "macos-13", "macos-14"]
-        python: ["cp39", "cp310", "cp311", "cp312", "cp313"]
+        python: ["cp313"]
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,7 +48,7 @@ jobs:
     strategy:
       matrix:
         os: ["ubuntu-24.04", "ubuntu-24.04-arm", "macos-13", "macos-14"]
-        python: ["cp39", "cp310", "cp311", "cp312", "cp313"]
+        python: ["cp313"]
     steps:
       - uses: actions/download-artifact@v4
         with:

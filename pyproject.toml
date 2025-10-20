@@ -23,7 +23,7 @@ name = "libcoal"
 version = "3.0.2"
 
 [project.urls]
-changelog = "https://github.com/coal-library/coal/blob/master/CHANGELOG.md"
+changelog = "https://github.com/coal-library/coal/blob/devel/CHANGELOG.md"
 homepage = "https://github.com/cmake-wheel/libcoal"
 upstream = "https://github.com/coal-library/coal"
 
